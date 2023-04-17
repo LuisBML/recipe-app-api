@@ -305,7 +305,9 @@ class PrivateRecipeAPITests(TestCase):
             'title': 'Apple Strudel',
             'time_minutes': 60,
             'price': Decimal('4.30'),
-            'ingredients': [{'name': 'Apples'}, {'name': 'cinnamon'}, {'name': 'Butter'}],
+            'ingredients': [{'name': 'Apples'},
+                            {'name': 'cinnamon'},
+                            {'name': 'Butter'}],
         }
         res = self.client.post(RECIPES_URL, payload, format='json')
 
